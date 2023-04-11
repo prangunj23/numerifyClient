@@ -9,7 +9,7 @@ const Result = React.memo(() => {
     const { query } = location.state;
     const [result, setResult] = useState([]);
 
-    Axios.post("https://numerify.herokuapp.com/api/search/", {
+    Axios.post("https://numerify.herokuapp.com/search/", {
         searchResult: query,
     }).then((res) => {
         setResult(res['data']);
