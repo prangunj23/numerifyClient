@@ -11,7 +11,7 @@ const About = () => {
   const sectionScroll = () => {
       let currentScroll = document.getElementById("about-scroller").scrollTop;
       console.log(currentScroll);
-      if(currentScroll === prevScroll && currentScroll !== 779)
+      if(currentScroll === prevScroll)
         return;
       switch(currentScroll){
         case 0: setScrollValue(-1); break;
